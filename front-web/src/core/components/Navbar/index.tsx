@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import { Link,NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => (
     <nav className="row bg-primary main-nav">
@@ -18,12 +18,12 @@ const Navbar = () => (
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="catalog" activeClassName="active">
+                    <NavLink to="/products" activeClassName="active">
                         CÁTALOGO
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="admin" activeClassName="active">
+                    <NavLink to="/admin" activeClassName="active">
                         ADMIN
                     </NavLink>
                 </li>
