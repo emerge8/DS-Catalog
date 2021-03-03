@@ -22,11 +22,11 @@ import javax.persistence.Table;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String name;
 	
 	@Column(columnDefinition = "TEXT")
-	private String Description;
+	private String description;
 	private Double price;
 	private String imgUrl;
 	
@@ -39,21 +39,21 @@ import javax.persistence.Table;
 	joinColumns = @JoinColumn(name = "product_id"),
 	inverseJoinColumns = @JoinColumn(name = "category_id")
 	)
-	Set<Category> categories = new HashSet<>();
+	Set<Category> categories = new HashSet<Category>();
 	public Product() {
 	}
-	public Product(long id, String name, String description, Double price, String imgUrl, Instant date) {
+	public Product(Long id, String name, String description, Double price, String imgUrl, Instant date) {
 		this.id = id;
 		this.name = name;
-		Description = description;
+		this.description = description;
 		this.price = price;
 		this.imgUrl = imgUrl;
 		this.date = date;
 	}
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -63,10 +63,10 @@ import javax.persistence.Table;
 		this.name = name;
 	}
 	public String getDescription() {
-		return Description;
+		return description;
 	}
 	public void setDescription(String description) {
-		Description = description;
+		this.description = description;
 	}
 	public Double getPrice() {
 		return price;

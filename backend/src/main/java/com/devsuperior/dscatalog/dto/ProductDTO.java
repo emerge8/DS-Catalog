@@ -12,22 +12,22 @@ import com.devsuperior.dscatalog.entities.Product;
 public class ProductDTO implements Serializable {
 	private static final long serialVersionUID = 1L; 
 	
-	private long id;
+	private Long id;
 	private String name;
-	private String Description;
+	private String description;
 	private Double price;
 	private String imgUrl;
 	private Instant date;
 	
-	private List<CategoryDTO> categories = new ArrayList<>();
+	private List<CategoryDTO> categories = new ArrayList<CategoryDTO>();
 	
 	public ProductDTO () {
 	}
 
-	public ProductDTO(long id, String name, String description, Double price, String imgUrl, Instant date) {
+	public ProductDTO(Long id, String name, String description, Double price, String imgUrl, Instant date) {
 		this.id = id;
 		this.name = name;
-		Description = description;
+		this.description = description;
 		this.price = price;
 		this.imgUrl = imgUrl;
 		this.date = date;
@@ -37,7 +37,7 @@ public class ProductDTO implements Serializable {
 	public ProductDTO(Product entity) {
 		this.id = entity.getId();
 		this.name = entity.getName();
-		Description = entity.getDescription();
+		this.description = entity.getDescription();
 		this.price = entity.getPrice();
 		this.imgUrl = entity.getImgUrl();
 		this.date = entity.getDate();
@@ -53,7 +53,7 @@ public class ProductDTO implements Serializable {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -66,11 +66,11 @@ public class ProductDTO implements Serializable {
 	}
 
 	public String getDescription() {
-		return Description;
+		return description;
 	}
 
 	public void setDescription(String description) {
-		Description = description;
+		this.description = description;
 	}
 
 	public Double getPrice() {
