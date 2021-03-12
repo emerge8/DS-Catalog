@@ -15,14 +15,14 @@ const Catalog = () => {
     useEffect(() => {
         const params = {
             page: activePage,
-            linesPerPage: 12
+            linesPerPage: 8
         }
         setIsLoading(true);
         makeRequest({ url: '/products', params })
         .then(response => setProductsResponse(response.data))
         .finally(() => {
             setIsLoading(false);
-        })
+        });
     }, [activePage]);
 
     return (

@@ -20,7 +20,7 @@ const ProductDetails = () => {
     console.log(isLoading);
 
     useEffect(() => {
-        setIsLoading(true)
+        setIsLoading(true);
         makeRequest({ url: `/products/${productId}` })
             .then(response => setProduct(response.data))
             .finally(() => setIsLoading(false));

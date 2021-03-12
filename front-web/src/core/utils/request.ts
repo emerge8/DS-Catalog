@@ -14,6 +14,6 @@ export const makeRequest = ({ method = 'GET', url, data, params }:RequestParams)
         method,
         url: `${BASE_URL}${url}`,
         data,
-        params
+        params  
     });
 }

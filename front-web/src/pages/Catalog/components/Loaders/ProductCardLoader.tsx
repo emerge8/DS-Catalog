@@ -3,7 +3,8 @@ import ContentLoader from "react-content-loader"
 import { generateList } from "../../../../core/utils/list"
 
 const ProductCardLoader = () => {
-  const loaderItems = generateList(6);
+  const loaderItems = generateList(5);
+  
   return (
     <>
       {loaderItems.map(item => (
