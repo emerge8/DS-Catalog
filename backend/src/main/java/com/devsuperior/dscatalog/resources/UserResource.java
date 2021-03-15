@@ -61,13 +61,15 @@ public class UserResource {
 	}
 	
 	@PutMapping(value = "/{id}")
-	public ResponseEntity<UserDTO> update(@PathVariable Long id,@Valid  @RequestBody UserUpdateDTO dto){
-		UserDTO newdto = service.update(id, dto);
-		return ResponseEntity.ok().body(dto);
+	public ResponseEntity<UserDTO> update(@PathVariable Long id, @Valid  @RequestBody UserUpdateDTO dto){
+		UserDTO newDto = service.update(id, dto);
+		return ResponseEntity.ok().body(newDto);
 	}
 	
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<UserDTO> delete(@PathVariable Long id	){
+	public ResponseEntity<UserDTO> delete(@PathVariable Long id){
 		service.delete(id);
-		return ResponseEntity.noContent().build();	}
+		return ResponseEntity.noContent().build();	
+	
+	}	
 }	
