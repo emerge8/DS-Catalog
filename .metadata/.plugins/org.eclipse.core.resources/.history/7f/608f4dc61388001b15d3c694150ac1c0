@@ -1,7 +1,5 @@
 package com.devsuperior.dscatalog.config;
 
-import java.util.Arrays;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -36,7 +34,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	private BCryptPasswordEncoder passwordEncoder;
 
 	@Autowired
-	private JwtAccessTokenConverter accessTokenConverter;
+	private JwtAccessTokenConverter accesTokenConverter;
 	
 	@Autowired
 	private JwtTokenStore Tokenconverter;
@@ -65,13 +63,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Override
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
 		
-		TokenEnhancerChain chain = new TokenEnhancerChain();
-		chain.setTokenEnhancers(Arrays.asList(accessTokenConverter, tokenEnhancer));
+		TokenEnhancerChain chain = new TokenEnhacerChain();
 		
 		endpoints.authenticationManager(authenticationManager)
 		.tokenStore(Tokenconverter)
-		.accessTokenConverter(accessTokenConverter)
-		.tokenEnhancer(chain);
+		.accessTokenConverter(accesTokenConverter);
 	}
 	
 	
