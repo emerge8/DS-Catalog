@@ -4,9 +4,9 @@
 # Sobre o projeto
 
 
-Ds Catalog é uma aplicação full stack web construída durante a o Bootcamp  DevSuperior , evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
+Ds Catalog é uma aplicação full stack web construída durante a o Bootcamp  DevSuperior , curso organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
 
-A aplicação consiste em um catálogo de produtos, com descrição, valor e categoria de cada produto, assim como um pequeno crud.
+A aplicação consiste em um catálogo de produtos, com descrição, valor e categoria de cada produto, assim como um pequeno crud. Essa aplicação também será mobile, mas até o momento essa é a versão Web, digo até o momento pois ainda sofrerá atualizações.
  
 
 ## Layout web
