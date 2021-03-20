@@ -9,9 +9,8 @@ A aplicação consiste em um catálogo de produtos, com descrição, valor e cat
  
 
 ## Layout web
-![Web 2](https://github.com/emerge8/assets/blob/main/pagina%20inicial.png)
 
-![Web 1](https://github.com/emerge8/assets/blob/main/catalogol.png)
+![Web 1](https://github.com/emerge8/assets/blob/main/React%20App%20-%20catalogo_produtos.gif)
 
 ## Modelo conceitual
 ![Modelo Conceitual](https://github.com/emerge8/assets/blob/main/mdlcon.png)
