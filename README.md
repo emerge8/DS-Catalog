@@ -35,7 +35,7 @@ Pré-requisitos: Java 11
 
 ```bash
 # clonar repositório
-dscatalog-bootcamp-devsuperior
+https://github.com/emerge8/DS-Catalog
 
 # entrar na pasta do projeto back end
 cd backend
@@ -49,7 +49,7 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-dscatalog-bootcamp-devsuperior
+https://github.com/emerge8/DS-Catalog
 
 # entrar na pasta do projeto front end web
 cd front-web
